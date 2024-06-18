@@ -65,7 +65,7 @@ export class InterfaceStack extends cdk.Stack {
     });
 
     const authorizerFunction = new lambda.Function(this, 'ApiAuthorizerFunction', {
-      runtime: lambda.Runtime.NODEJS_14_X,
+      runtime: lambda.Runtime.NODEJS_16_X,
       code: lambda.AssetCode.fromAsset(path.join(__dirname, '../lambdas/authorizer')),
       handler: 'index.handler',
       environment: {
