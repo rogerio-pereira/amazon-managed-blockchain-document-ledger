@@ -4,7 +4,7 @@
 import * as path from 'path';
 
 import * as constructs from 'constructs';
-import * as cdk from 'aws-cdk-lib/core';
+import * as cdk from 'aws-cdk-lib'
 import * as apigateway from 'aws-cdk-lib/aws-apigateway';
 import * as cm from 'aws-cdk-lib/aws-certificatemanager';
 import * as ec2 from 'aws-cdk-lib/aws-ec2';

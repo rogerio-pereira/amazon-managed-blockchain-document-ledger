@@ -4,7 +4,7 @@
 import * as os from 'os';
 
 import * as constructs from 'constructs';
-import * as cdk from 'aws-cdk-lib/core';
+import * as cdk from 'aws-cdk-lib'
 import * as cm from 'aws-cdk-lib/aws-certificatemanager';
 import * as ec2 from 'aws-cdk-lib/aws-ec2';
 import * as ecrAssets from 'aws-cdk-lib/aws-ecr-assets';
