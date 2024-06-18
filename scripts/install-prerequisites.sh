@@ -17,7 +17,7 @@ fi
 
 
 echo "Installing OS packages"
-sudo yum install -y postgresql
+sudo yum update && sudo yum install -y postgresql14.x86_64 postgresql14-server -y
 
 
 echo "Installing latest CDK"

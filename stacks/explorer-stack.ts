@@ -51,7 +51,7 @@ export class ExplorerStack extends cdk.Stack {
     });
 
     const database = new rds.DatabaseInstance(this, 'Database', {
-      engine: rds.DatabaseInstanceEngine.postgres({version: rds.PostgresEngineVersion.VER_16}),
+      engine: rds.DatabaseInstanceEngine.postgres({version: rds.PostgresEngineVersion.VER_14_1}),
       instanceType: ec2.InstanceType.of(ec2.InstanceClass.BURSTABLE3, ec2.InstanceSize.SMALL),
       vpc: defaultVpc,
       vpcSubnets: {subnets: databaseSubnets},
