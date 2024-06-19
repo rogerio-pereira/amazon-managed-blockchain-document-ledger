@@ -6,8 +6,8 @@ cd "$(dirname ${BASH_SOURCE[0]})/.."
 
 echo "Configuring node version"
 . ~/.nvm/nvm.sh
-nvm install 12
-nvm use 12
+nvm install 16
+nvm use 16
 
 
 echo "Prepping lambda layer"
